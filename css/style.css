@@ -1,4 +1,9 @@
 /* <============= General =============> */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+}
+
 button:focus {
     outline: none!important;
     box-shadow:none;
@@ -8,7 +13,6 @@ section.page-section {
     padding-top: 8rem;
     padding-bottom: 8rem;
 }
-
 
 
 /* <============= Header Section =============> */
