@@ -1,3 +1,16 @@
+/* <============= General =============> */
+button:focus {
+    outline: none!important;
+    box-shadow:none;
+}
+
+section.page-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+
+
 /* <============= Header Section =============> */
 
 /* 1. Navigation Bar */
@@ -6,9 +19,17 @@
     height: 76px;
 }
 
+#mainNav {
+    background-color: #282828;
+}
+
 .nav-link {
     font-size: 1.3rem;
-    margin-right: 1.4rem;
+    margin-right: 1.3rem;
+}
+
+.nav-link:hover{
+    color: #5fbcb1!important;
 }
 
 
@@ -25,7 +46,16 @@ header.masthead {
 hr.divider {
     max-width: 3.25rem;
     border-width: 0.2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     border-color: #ffffff;
+}
+
+#takeTour {
+    background-color: #5fbcb1;
+    border-color: #5fbcb1;
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 
 
@@ -53,4 +83,9 @@ header.masthead h1 {
     header.masthead h1 {
         font-size: 3.5rem;
     }
+}
+
+/* <============= About Section =============> */
+#about {
+    background-color: #5fbcb1;
 }
