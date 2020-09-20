@@ -4,6 +4,15 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
+p {
+    font-family: 'Do Hyeon', sans-serif;
+    color: white;
+}
+
+button {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
 button:focus {
     outline: none!important;
     box-shadow:none;
@@ -29,6 +38,7 @@ section.page-section {
 
 .nav-link {
     font-size: 1.3rem;
+    font-family: 'Do Hyeon', sans-serif;
     margin-right: 1.3rem;
 }
 
@@ -92,4 +102,8 @@ header.masthead h1 {
 /* <============= About Section =============> */
 #about {
     background-color: #5fbcb1;
+}
+
+#profilePhoto {
+    width: 280px;
 }
