@@ -119,10 +119,20 @@ header.masthead h1 {
     width: 280px;
 }
 
+/* <============= Contact Section ==============> */
+#contact {
+    background-color: #000000;
+}
+
+.form-control {
+    border-radius: 1rem;
+}
+
+
 /* <============= Footer Section =============> */
 footer {
     background-color: #282828;
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 .contact-icons {
