@@ -7,10 +7,21 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: 'Do Hyeon', sans-serif;
     color: white;
+    font-size: 1.2rem;
 }
 
 button {
     font-family: 'Do Hyeon', sans-serif;
+}
+
+button.btn-circle {
+    width: 50px;
+    height: 50px;
+    padding: 3px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #5fbcb1;
 }
 
 button:focus {
@@ -106,4 +117,25 @@ header.masthead h1 {
 
 #profilePhoto {
     width: 280px;
+}
+
+/* <============= Footer Section =============> */
+footer {
+    background-color: #282828;
+    padding-top: 4rem;
+}
+
+.contact-icons {
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.social-buttons {
+    vertical-align: middle;
+    text-align: center;
+}
+
+#copyright-text {
+    font-size: 0.9rem;
+    margin-bottom: 0rem;
 }
