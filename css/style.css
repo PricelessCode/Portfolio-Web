@@ -121,11 +121,25 @@ header.masthead h1 {
 
 /* <============= Contact Section ==============> */
 #contact {
-    background-color: #000000;
+    background-image: url("/images/contact.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: black;
 }
 
 .form-control {
     border-radius: 1rem;
+}
+
+.form-button {
+    margin: 0.4rem;
+    font-size: 1.2rem;
+    width: 10rem;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    color: white;
+    background-color: #5fbcb1;
 }
 
 
