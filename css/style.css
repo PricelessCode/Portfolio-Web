@@ -1,5 +1,10 @@
 /* <============= General =============> */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Do Hyeon', sans-serif;
     color: white;
 }
@@ -25,8 +30,8 @@ button.btn-circle {
 }
 
 button:focus {
-    outline: none!important;
-    box-shadow:none;
+    outline: none !important;
+    box-shadow: none;
 }
 
 section.page-section {
@@ -52,8 +57,8 @@ section.page-section {
     margin-right: 1.3rem;
 }
 
-.nav-link:hover{
-    color: #5fbcb1!important;
+.nav-link:hover {
+    color: #5fbcb1 !important;
 }
 
 
@@ -103,6 +108,7 @@ header.masthead h1 {
         font-size: 3rem;
     }
 }
+
 @media (min-width: 1200px) {
     header.masthead h1 {
         font-size: 3.5rem;
@@ -116,6 +122,203 @@ header.masthead h1 {
 
 #profilePhoto {
     width: 280px;
+}
+
+
+/* <============= Services Section ==============> */
+#services {
+    background-color: #282828;
+}
+
+.pricingTable {
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+}
+
+.pricingTable .pricingTable-header {
+    color: #fff;
+    padding: 1rem 1rem;
+    position: relative;
+    z-index: 1;
+    -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+    transition: all 0.3s;
+}
+
+.pricingTable .pricingTable-header:before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+    transition: all 0.3s;
+}
+
+.pricingTable:hover .pricingTable-header:before {
+    height: 93%;
+    width: 95%;
+    opacity: 1;
+}
+
+.pricingTable .icon {
+    font-size: 3rem;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.pricingTable .title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.pricingTable .pricing-content {
+    background-color: rgba(255, 255, 255, 0.89);
+    padding: 1rem 0.5rem;
+    position: relative;
+    -webkit-clip-path: polygon(100% 0, 100% 80%, 80% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 80%, 80% 100%, 0 100%, 0 0);
+    transition: all 0.3s;
+}
+
+.pricingTable .pricing-content:before {
+    content: '';
+    background: radial-gradient(transparent, transparent, rgba(0, 0, 0, 0.05));
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    -webkit-clip-path: polygon(100% 0, 100% 80%, 80% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 80%, 80% 100%, 0 100%, 0 0);
+    transition: all 0.3s;
+}
+
+.pricingTable:hover .pricing-content:before {
+    height: 95%;
+    width: 95%;
+    opacity: 1;
+}
+
+.pricingTable .amount {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    display: inline-block;
+}
+
+.pricingTable .description {
+    color: #555;
+    font-size: 1.5rem;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+.pricingTable .pricing-content ul {
+    text-align: left;
+    padding: 0;
+    margin: 0 0 20px;
+    list-style: none;
+    display: inline-block;
+}
+
+.pricingTable .pricing-content ul li {
+    color: #555;
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.pricingTable .pricing-content ul li:before {
+    content: "\f00c";
+    color: #fff;
+    background-color: #2ecc71;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    text-align: center;
+    line-height: 25px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.pricingTable .pricing-content li.disable:before {
+    content: '\f00d';
+    background-color: #ff5151;
+}
+
+.pricingTable .pricingTable-signup {
+    color: #8e44ad;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    width: 45%;
+    padding: 5px 15px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.pricingTable .pricingTable-signup:hover {
+    color: #fff;
+}
+
+.pricingTable .pricingTable-signup:before {
+    content: '';
+    background-color: #8e44ad;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transform: scale(0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+.pricingTable .pricingTable-signup:hover:before {
+    transform: scale(1);
+}
+
+.pricingTable.blue .pricingTable-header {
+    background-color: #5fbcb1;
+}
+
+.pricingTable.blue .amount,
+.pricingTable.blue .pricingTable-signup {
+    color: #5fbcb1;
+}
+
+.pricingTable.blue .pricingTable-signup:hover {
+    color: #fff;
+}
+
+.pricingTable.blue .pricingTable-signup:before {
+    background-color: #5fbcb1;
+}
+
+
+
+@media only screen and (max-width: 990px) {
+    .pricingTable {
+        margin: 0 0 30px;
+    }
 }
 
 /* <============= Skills Section ==============> */
