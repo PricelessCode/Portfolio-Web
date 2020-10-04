@@ -359,6 +359,38 @@ hr.skill-divider {
     width: 16px;
 }
 
+/* <============= Portfolio Section ===============> */
+#portfolio {
+    background-color: #5fbcb1;
+}
+
+.card {
+    height: 20rem;
+    width: 20rem;
+    margin: 1rem;
+}
+
+.project-image {
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+.project-title {
+    color: black;
+}
+
+.project-description {
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
+}
+
+.project-button {
+    font-size: 1.4rem;
+    margin-right: 0.3rem;
+}
+
 /* <============= Contact Section ==============> */
 #contact {
     background-image: url("/images/contact.jpg");
